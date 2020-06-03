@@ -1,0 +1,39 @@
+name: terraform-gcp-vpc
+title: GCP InSpec Profile
+maintainer: Brown CIS
+copyright: Brown University
+license: MIT
+summary: An InSpec Compliance Profile For GCP
+version: 0.1.0
+inspec_version: ">= 2.3.5"
+attributes:
+  - name: project_id
+    required: true
+    description: "The GCP project identifier."
+    type: string
+  # - name: project_name
+  #   required: true
+  #   description: "The GCP project name."
+  #   type: string
+  # - name: organization_id
+  #   required: true
+  #   description: "The GCP organization identifier."
+  #   type: string
+  # - name: service_account_display_name
+  #   required: true
+  #   description: "The GCP service_account_display_name"
+  #   type: string
+  - name: service_account_email
+    required: true
+    description: "The GCP service_account_display_name"
+    type: string
+  # - name: activate_apis
+  #   required: true
+  #   description: "The GCP active activate_apis"
+  #   type: string
+depends:
+  - name: inspec-gcp
+    git: https://github.com/inspec/inspec-gcp.git
+    tag: v1.4.0
+supports:
+  - platform: gcp
