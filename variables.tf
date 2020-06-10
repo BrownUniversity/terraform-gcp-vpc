@@ -1,7 +1,3 @@
-variable credentials_path {
-  description = "Location of the credential file."
-}
-
 # ---------------------------------------------------------------
 #  VPC VARIABLES
 # ---------------------------------------------------------------

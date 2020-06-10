@@ -1,4 +1,4 @@
-name: terraform-gcp-vpc
+name: simple-vpc
 title: GCP InSpec Profile
 maintainer: Brown CIS
 copyright: Brown University
