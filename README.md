@@ -1,10 +1,10 @@
 # terraform-gcp-vpc
 
-[Terraform](https://www.terraform.io/) module for creating a project in GCP. The requiered and default input variables are consistent with oranizational needs at Brown University. Basic features:
+[Terraform](https://www.terraform.io/) module for creating a VPC in GCP. Basic features:
 
-- Based in Google's project factory
-- Requires project to reside inside a folder
-- Enables monitoring and logging
+- Based in [Google's network module](https://github.com/terraform-google-modules/terraform-google-network)
+- Configures 1 subnet
+- IP CIDR defaults to `10.0.0.0/17`
 
 ## Getting Started
 
@@ -42,9 +42,3 @@ And now you're ready to run test kitchen. Test kitchen has a couple main command
 - `bundle exec kitchen converge` runs our terraform examples.
 - `bundle exec kitchen verify` runs our inspec scripts against a converged kitchen.
 - `bundle exec kitchen test` does all the above.
-
-### Developer note:
-
-For generating the Inspec profile, you can install Inspec and then run
-
-`inspec init profile --platform gcp tests`

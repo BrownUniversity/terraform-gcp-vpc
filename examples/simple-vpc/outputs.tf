@@ -19,5 +19,5 @@ output "routing_mode" {
 }
 
 output "subnet_ip" {
-  value = module.simple-project.subnet_ip
+  value = module.simple-vpc.subnet_ip
 }
