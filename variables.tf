@@ -8,7 +8,6 @@ variable "project_id" {
 
 variable network_name {
   description = "Name of the VPC."
-  default = "kubernetes-vpc"
 }
 
 variable routing_mode {
@@ -18,7 +17,6 @@ variable routing_mode {
 
 variable subnet_name {
   description = "Name of the subnet."
-  default = "kubernetes-subnet"
 }
 
 variable subnet_ip {
