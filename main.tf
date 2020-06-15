@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------------------------------------------------------------
 
 # Create the VPC, Subnets and Secondary Ranges
-module "simple_vpc" {
+module "vpc" {
   source  = "terraform-google-modules/network/google"
   version = "~> 2.0.0"
 
