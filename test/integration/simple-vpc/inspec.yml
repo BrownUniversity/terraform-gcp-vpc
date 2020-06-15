@@ -9,28 +9,27 @@ inspec_version: ">= 2.3.5"
 attributes:
   - name: project_id
     required: true
-    description: "The GCP project identifier."
-    type: string
-  # - name: project_name
-  #   required: true
-  #   description: "The GCP project name."
-  #   type: string
-  # - name: organization_id
-  #   required: true
-  #   description: "The GCP organization identifier."
-  #   type: string
-  # - name: service_account_display_name
-  #   required: true
-  #   description: "The GCP service_account_display_name"
-  #   type: string
-  - name: service_account_email
+    description: "Identiefier of the project containing the VPC"
+  - name: network_name
     required: true
-    description: "The GCP service_account_display_name"
+    description: "The network name."
     type: string
-  # - name: activate_apis
-  #   required: true
-  #   description: "The GCP active activate_apis"
-  #   type: string
+  - name: subnet_name
+    required: true
+    description: "The subnetwork name."
+    type: string
+  - name: subnet_region
+    required: true
+    description: "The region of the subnet."
+    type: string
+  - name: subnet_ip
+    required: true
+    description: "Subnet IP CIDR."
+    type: string
+  - name: routing_mode
+    required: true
+    description: "The routing mode GLOBAL/REGIONAL."
+    type: string
 depends:
   - name: inspec-gcp
     git: https://github.com/inspec/inspec-gcp.git
