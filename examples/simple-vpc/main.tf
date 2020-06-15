@@ -1,6 +1,5 @@
 module "simple-project" {
-  source  = "terraform-google-modules/project-factory/google"
-  version = "~> 8.0"
+  source  = "git@github.com:BrownUniversity/terraform-gcp-project.git"
 
   name                = "inspec-vpc"
   folder_id           = var.folder_id
@@ -11,8 +10,9 @@ module "simple-project" {
 
 module "simple-vpc" {
   source                     = "../.."
-
   project_id                 = module.simple-project.project_id
+  network_name               = "network-01"
+  subnet_name                = "subnet-01"
   subnet_region              = "us-east1"
 }
 
