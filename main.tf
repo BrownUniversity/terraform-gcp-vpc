@@ -1,23 +1,10 @@
-# ------------------------------------------------------------
-#   PROVIDER BLOCK
-# ------------------------------------------------------------
-
-provider "google-beta" {
-  credentials = var.credentials_path
-  version     = "~> 3.0"
-}
-
-provider "google" {
-  credentials = var.credentials_path
-  version     = "~> 3.0"
-}
 
 # ---------------------------------------------------------------------------------------------------------------------
 #  CREATE A SIMPLE VPC
 # ---------------------------------------------------------------------------------------------------------------------
 
 # Create the VPC, Subnets and Secondary Ranges
-module "simple_vpc" {
+module "vpc" {
   source  = "terraform-google-modules/network/google"
   version = "~> 2.0.0"
 
