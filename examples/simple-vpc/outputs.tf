@@ -3,15 +3,15 @@ output "project_id" {
 }
 
 output "network_name" {
-    value = local.network_name
+  value = local.network_name
 }
 
 output "subnet_name" {
-    value = local.subnet_name
+  value = local.subnet_name
 }
 
 output "subnet_region" {
-    value = local.subnet_region
+  value = local.subnet_region
 }
 
 output "routing_mode" {
