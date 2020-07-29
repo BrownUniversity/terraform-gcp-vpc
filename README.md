@@ -48,18 +48,18 @@ No provider.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| description | n/a | `string` | `"Deployed through Terraform."` | no |
+| description | Subnet description | `string` | `"Deployed through Terraform."` | no |
 | ip\_range\_pods | The secondary ip range to use for pods | `string` | `"192.168.0.0/18"` | no |
 | ip\_range\_services | The secondary ip range to use for pods | `string` | `"192.168.64.0/18"` | no |
-| network\_name | Name of the VPC. | `any` | n/a | yes |
-| project\_id | The project ID to host the VPC in | `any` | n/a | yes |
+| network\_name | Name of the VPC. | `string` | n/a | yes |
+| project\_id | The project ID to host the VPC in | `string` | n/a | yes |
 | range\_name\_pods | The range name for pods | `string` | `"kubernetes-pods"` | no |
 | range\_name\_services | The range name for services | `string` | `"kubernetes-services"` | no |
 | routing\_mode | Routing mode. GLOBAL or REGIONAL | `string` | `"GLOBAL"` | no |
-| subnet\_flow\_logs | n/a | `string` | `"true"` | no |
+| subnet\_flow\_logs | Whether to enable flow logging for the subnetwork. | `string` | `"true"` | no |
 | subnet\_ip | Subnet IP CIDR. | `string` | `"10.0.0.0/17"` | no |
 | subnet\_name | Name of the subnet. | `string` | n/a | yes |
-| subnet\_private\_access | n/a | `string` | `"true"` | no |
+| subnet\_private\_access | Enable private Google access | `string` | `"true"` | no |
 | subnet\_region | Region subnet lives in. | `string` | n/a | yes |
 
 ## Outputs

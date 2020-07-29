@@ -1,35 +1,4 @@
 name: simple-vpc
-title: GCP InSpec Profile
-maintainer: Brown CIS
-copyright: Brown University
-license: MIT
-summary: An InSpec Compliance Profile For GCP
-version: 0.1.0
-inspec_version: ">= 2.3.5"
-attributes:
-  - name: project_id
-    required: true
-    description: "Identiefier of the project containing the VPC"
-  - name: network_name
-    required: true
-    description: "The network name."
-    type: string
-  - name: subnet_name
-    required: true
-    description: "The subnetwork name."
-    type: string
-  - name: subnet_region
-    required: true
-    description: "The region of the subnet."
-    type: string
-  - name: subnet_ip
-    required: true
-    description: "Subnet IP CIDR."
-    type: string
-  - name: routing_mode
-    required: true
-    description: "The routing mode GLOBAL/REGIONAL."
-    type: string
 depends:
   - name: inspec-gcp
     git: https://github.com/inspec/inspec-gcp.git
