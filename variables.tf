@@ -17,23 +17,28 @@ variable routing_mode {
 
 variable subnet_name {
   description = "Name of the subnet."
+  type        = string
 }
 
 variable subnet_ip {
   description = "Subnet IP CIDR."
-  default = "10.0.0.0/17"
+  type        = string
+  default     = "10.0.0.0/17"
 }
 
 variable subnet_region {
   description = "Region subnet lives in."
+  type        = string
 }
 
 variable subnet_private_access {
   default = "true"
+  type    = string
 }
 
 variable subnet_flow_logs {
   default = "true"
+  type    = string
 }
 
 variable description {
@@ -42,12 +47,12 @@ variable description {
 
 variable "ip_range_pods" {
   description = "The secondary ip range to use for pods"
-  default = "192.168.0.0/18"
+  default     = "192.168.0.0/18"
 }
 
 variable "ip_range_services" {
   description = "The secondary ip range to use for pods"
-  default = "192.168.64.0/18"
+  default     = "192.168.64.0/18"
 }
 
 variable range_name_pods {
