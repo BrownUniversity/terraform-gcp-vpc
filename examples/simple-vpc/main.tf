@@ -6,7 +6,7 @@ locals {
 }
 
 module "simple-project" {
-  source          = "git@github.com:BrownUniversity/terraform-gcp-project.gi?ref=v0.1.0"
+  source          = "https://github.com/BrownUniversity/terraform-gcp-project.git?ref=v0.1.0"
   project_name    = "inspec-vpc"
   folder_id       = var.folder_id
   billing_account = var.billing_account
