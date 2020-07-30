@@ -66,10 +66,10 @@ No provider.
 
 | Name | Description |
 |------|-------------|
-| network\_name | n/a |
-| routing\_mode | n/a |
-| subnet\_ip | n/a |
-| subnet\_name | n/a |
+| network\_name | Name of the VPC. |
+| routing\_mode | Routing mode. GLOBAL or REGIONAL |
+| subnet\_ip | Subnet IP |
+| subnet\_name | Name of the subnetwok. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
