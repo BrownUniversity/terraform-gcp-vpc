@@ -110,7 +110,16 @@ Use [GitLab Flow](https://docs.gitlab.com/ee/topics/gitlab_flow.html#production-
 
 ### Pre-commit hooks
 Install and configure terraform [pre-commit hooks](https://github.com/antonbabenko/pre-commit-terraform)
-To run them: `pre-commit run -a`
+This repository has the following hooks, preonfigured. After intallation, you can run them using: `pre-commit run -a`
+Please make sure you run them before pushing to remote.
+
+| Hook name                                        | Description                                                                                                                |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `terraform_fmt`                                  | Rewrites all Terraform configuration files to a canonical format.                                                          |
+| `terraform_docs`                                 | Inserts input and output documentation into `README.md`.                                                       |
+| `terraform_tflint`                               | Validates all Terraform configuration files with [TFLint](https://github.com/terraform-linters/tflint).                              |
+| `terraform_tfsec`                                | [TFSec](https://github.com/liamg/tfsec) static analysis of terraform templates to spot potential security issues.     |
+
 
 ### CI
 This project has three workflows enabled:
