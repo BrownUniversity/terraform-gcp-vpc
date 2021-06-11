@@ -37,7 +37,7 @@ code by adding a `module` configuration and setting its `source` parameter to UR
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
+| terraform | >= 1.0 |
 | google | >= 3.0, <4.0.0 |
 
 ## Providers
@@ -126,6 +126,6 @@ This project has three workflows enabled:
 
 1. PR labeler: When openning a PR to defaukt branch, a label is given assigned automatically accourding to the name of your feature branch. The labeler follows the follows rules in [pr-labeler.yml](.github/pr-labeler.yml)
 
-2. Realease Drafter: When merging to master, a release is drafted using the [Release-Drafter Action](https://github.com/marketplace/actions/release-drafter)
+2. Realease Drafter: When merging to main, a release is drafted using the [Release-Drafter Action](https://github.com/marketplace/actions/release-drafter)
 
 3. `Kitchen test` is run on every commit unless `[skip ci]` is added to commit message.
