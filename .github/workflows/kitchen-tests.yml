@@ -72,9 +72,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Create Credential File
       run: |
-        echo "$GCP_CREDENTIAL_JSON" > /tmp/credentials.json
+        echo "$GCP_CREDENTIAL_JSON" | base64 -d > /tmp/credentials.json
       env:
-        GCP_CREDENTIAL_JSON: ${{ secrets.GCP_CI_CREDENTIAL_JSON}}
+        GCP_CREDENTIAL_JSON: ${{ secrets.GCP_CREDENTIAL_JSON}}
     - name: Run Kitchen
       run: kitchen test
       env:
