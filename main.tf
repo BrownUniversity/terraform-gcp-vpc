@@ -1,7 +1,7 @@
 # Create a simple VPC, Subnets and Secondary Ranges
 module "vpc" {
   source  = "terraform-google-modules/network/google"
-  version = "~> 3.3.0"
+  version = "5.1.0"
 
   project_id   = var.project_id
   network_name = var.network_name
