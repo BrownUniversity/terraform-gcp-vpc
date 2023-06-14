@@ -1,8 +1,7 @@
 variable "folder_id" {
+  type = string
 }
 
 variable "billing_account" {
-}
-
-variable "org_id" {
+  type = string
 }

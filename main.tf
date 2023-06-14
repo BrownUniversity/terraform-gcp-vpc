@@ -1,7 +1,7 @@
 # Create a simple VPC, Subnets and Secondary Ranges
 module "vpc" {
   source  = "terraform-google-modules/network/google"
-  version = "5.1.0"
+  version = "7.0.0"
 
   project_id   = var.project_id
   network_name = var.network_name
@@ -21,7 +21,7 @@ module "vpc" {
   ]
 
   secondary_ranges = {
-    "${var.subnet_name}" = [
+    var.subnet_name = [
       {
         range_name    = var.range_name_pods
         ip_cidr_range = var.ip_range_pods
