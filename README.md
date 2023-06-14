@@ -38,7 +38,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-google-modules/network/google | 5.1.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-google-modules/network/google | 7.0.0 |
 
 ## Resources
 
