@@ -1,8 +1,8 @@
-run "create_vpc" {
-  command = plan
+run "simple_vpc_test" {
 
-  module "simple-project" {
+  module {
     source = "./tests/simple-vpc/"
+  }
 
   assert {
     condition     = module.simple-project.project_id != ""
