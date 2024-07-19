@@ -1,6 +1,6 @@
 # terraform-gcp-vpc
 
-![kitchen-tests](https://github.com/BrownUniversity/terraform-kitchen-template/workflows/kitchen-tests/badge.svg)
+![kitchen-tests](https://github.com/BrownUniversity/terraform-kitchen-template/workflows/terraform-tests/badge.svg)
 
 
 [Terraform](https://www.terraform.io/) module for creating a VPC in GCP. Basic features:
