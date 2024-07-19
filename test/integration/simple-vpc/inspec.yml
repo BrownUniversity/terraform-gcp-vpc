@@ -1,7 +1,0 @@
-name: simple-vpc
-depends:
-  - name: inspec-gcp
-    git: https://github.com/inspec/inspec-gcp.git
-    tag: v1.10.37
-supports:
-  - platform: gcp
